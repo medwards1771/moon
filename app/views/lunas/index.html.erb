@@ -1,0 +1,9 @@
+<% @lunas.each do |luna| %>
+  <p>Age:<%= luna.age %></p>
+  <p>Illumination: <%= luna.illumination %></p>
+  <p>Stage: <%= luna.stage %></p>
+  <p>Distance from Center of Earth: <%= luna.DFCOE %></p>
+  <p>Distance from Sun: <%= luna.DFS %></p>
+  <p>Full Moon Date: <%= luna.FM %></p>
+  <p>New Moon Date: <%= luna.NNM %>
+<% end %>
