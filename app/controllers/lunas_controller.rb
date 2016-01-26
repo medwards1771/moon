@@ -16,6 +16,7 @@ class LunasController < ApplicationController
 
   def show
     @luna = Luna.find(params[:id])
+    @luna_age = @luna.age
   end
 
 
