@@ -1,0 +1,2 @@
+class LunaController < ApplicationController
+end
