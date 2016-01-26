@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160126172033) do
+ActiveRecord::Schema.define(version: 20160126192950) do
 
   create_table "lunas", force: :cascade do |t|
     t.integer  "age"
@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20160126172033) do
     t.integer  "DFS"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.text     "FM"
+    t.text     "NNM"
   end
 
 end

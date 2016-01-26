@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  root to: "luna#index"
+  root to: "lunas#index"
+  resources :lunas
 end
