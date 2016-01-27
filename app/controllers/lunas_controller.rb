@@ -5,7 +5,8 @@ class LunasController < ApplicationController
 
   def create
     date_string = params[:date]
-    date_time = Time.new(date_string)
+    date_array = date_string.split("-")
+    date_time = Time.new(date_array[0], date_array[1], date_array[2])
     timestamp = date_time.to_i
     moon_api = Adapters::MoonConnection.new
     luna = moon_api.query(timestamp)
